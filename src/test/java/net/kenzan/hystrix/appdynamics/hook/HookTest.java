@@ -2,7 +2,8 @@ package net.kenzan.hystrix.appdynamics.hook;
 
 import static org.junit.Assert.assertTrue;
 
-import org.apache.commons.configuration.AbstractConfiguration;
+import java.io.IOException;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,14 +18,9 @@ import com.netflix.hystrix.strategy.executionhook.HystrixCommandExecutionHook;
 public class HookTest {
     
     @Before
-    public void setup() {
+    public void setup() throws IOException {
         
-        AbstractConfiguration config = ConfigurationManager.getConfigInstance();
-        
-        config.addProperty("hystrix.plugin.HystrixEventNotifier.implementation",
-            "net.kenzan.hystrix.appdynamics.hook.AppdHystrixEventNotifierHook");
-        config.addProperty("hystrix.plugin.HystrixCommandExecutionHook.implementation",
-            "net.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook");
+        ConfigurationManager.loadPropertiesFromResources("hystrix-appdynamics.properties");
     }
     
     @Test
