@@ -1,10 +1,9 @@
 ## Hystrix-AppDynamics
-A simple Hystrix library to help to connect with Appdynamics
 
-## Information
+# Information
 | Package       | Description   | Version|
 | ------------- |:-------------:| ------:|
-| hystrix-appdynamics| Hooks for Appdynamics to instrument Hystrix | 1.0.0-rc1 |
+| hystrix-appdynamics| Hooks for Appdynamics to instrument Hystrix | 0.0.1-SNAPSHOT |
 
 # Overview
 hystrix-appdynamics provides specific hooks for Appdynamics to instrument hystrix
@@ -35,4 +34,5 @@ Maven:
 - CurrentConcurrentExecutionCount
 - Hystrix Events emitted during the lifecycle
 
-
+# Wiki
+Wiki for this library for in-depth information: [Wiki](https://github.com/kenzanmedia/hystrix-appdynamics/wiki)

@@ -11,6 +11,9 @@ import com.netflix.hystrix.strategy.executionhook.HystrixCommandExecutionHook;
  */
 public class AppdHystrixCommandExecutionHook extends HystrixCommandExecutionHook {
     
+    /**
+     * Instantiates a new appd hystrix command execution hook.
+     */
     public AppdHystrixCommandExecutionHook() {
     }
     
@@ -227,6 +230,13 @@ public class AppdHystrixCommandExecutionHook extends HystrixCommandExecutionHook
         return super.onEmit(commandInstance, value);
     }
     
+    /**
+     * Mark events.
+     *
+     * @param <T> the generic type
+     * @param commandInstance the command instance
+     * @param event the event
+     */
     public <T> void markEvents(HystrixCommand<T> commandInstance, String event) {
         
         commandInstance.getCommandKey().name();

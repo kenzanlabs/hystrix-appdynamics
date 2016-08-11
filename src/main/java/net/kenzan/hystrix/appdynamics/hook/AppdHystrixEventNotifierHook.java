@@ -3,12 +3,18 @@ package net.kenzan.hystrix.appdynamics.hook;
 import java.util.List;
 
 import com.netflix.hystrix.HystrixCommandKey;
-import com.netflix.hystrix.HystrixEventType;
 import com.netflix.hystrix.HystrixCommandProperties.ExecutionIsolationStrategy;
+import com.netflix.hystrix.HystrixEventType;
 import com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifier;
 
+/**
+ * The Class AppdHystrixEventNotifierHook.
+ */
 public class AppdHystrixEventNotifierHook extends HystrixEventNotifier {
     
+    /**
+     * Instantiates a new appd hystrix event notifier hook.
+     */
     public AppdHystrixEventNotifierHook() {
         
     }
