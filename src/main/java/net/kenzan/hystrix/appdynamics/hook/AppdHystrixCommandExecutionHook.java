@@ -231,21 +231,22 @@ public class AppdHystrixCommandExecutionHook extends HystrixCommandExecutionHook
     }
     
     /**
-     * Mark events.
-     *
+     * Appdynamics should use this method to collect metrics on individual command instances.
+     * Following are some of the examples of the metrics to be collected: <br>
+     *  - commandInstance.getCommandKey().name();<br>
+     *  - commandInstance.getCommandGroup().name();<br>
+     *  - commandInstance.getExecutionEvents();<br>
+     *  - commandInstance.getExecutionTimeInMilliseconds();<br>
+     *  - commandInstance.getMetrics().getRollingMaxConcurrentExecutions();<br>
+     *  - commandInstance.getNumberEmissions();<br>
+     *  - commandInstance.getNumberFallbackEmissions();<br>
+     *  - commandInstance.getMetrics().getCurrentConcurrentExecutionCount();<br>
+     * 
      * @param <T> the generic type
      * @param commandInstance the command instance
      * @param event the event
      */
     public <T> void markEvents(HystrixCommand<T> commandInstance, String event) {
         
-        commandInstance.getCommandKey().name();
-        commandInstance.getCommandGroup().name();
-        commandInstance.getExecutionEvents();
-        commandInstance.getExecutionTimeInMilliseconds();
-        commandInstance.getMetrics().getRollingMaxConcurrentExecutions();
-        commandInstance.getNumberEmissions();
-        commandInstance.getNumberFallbackEmissions();
-        commandInstance.getMetrics().getCurrentConcurrentExecutionCount();
     }
 }
