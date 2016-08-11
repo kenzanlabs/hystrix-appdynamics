@@ -35,4 +35,4 @@ Maven:
 - Hystrix Events emitted during the lifecycle
 
 # Wiki
-Wiki for this library for in-depth information: [Wiki](https://github.com/kenzanmedia/hystrix-appdynamics/wiki)
+Wiki for this library for in-depth information: [Wiki](https://github.com/kenzanmedia/hystrix-appdynamics/wiki) 
