@@ -1,4 +1,4 @@
-package net.kenzan.hystrix.appdynamics.hook;
+package com.kenzan.hystrix.appdynamics.hook;
 
 import java.util.List;
 

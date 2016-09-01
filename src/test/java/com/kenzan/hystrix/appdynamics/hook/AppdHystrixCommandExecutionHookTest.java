@@ -1,7 +1,7 @@
 /**
  * 
  */
-package net.kenzan.hystrix.appdynamics.hook;
+package com.kenzan.hystrix.appdynamics.hook;
 
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.eq;
@@ -14,6 +14,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Spy;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import com.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook;
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommand.Setter;
 import com.netflix.hystrix.HystrixCommandGroupKey;
@@ -56,7 +57,7 @@ public class AppdHystrixCommandExecutionHookTest {
     
     /**
      * Test method for
-     * {@link net.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onExecutionError(com.netflix.hystrix.HystrixInvokable, java.lang.Exception)}.
+     * {@link com.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onExecutionError(com.netflix.hystrix.HystrixInvokable, java.lang.Exception)}.
      */
     @Test
     public final void testOnExecutionError() throws Exception {
@@ -67,7 +68,7 @@ public class AppdHystrixCommandExecutionHookTest {
     
     /**
      * Test method for
-     * {@link net.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onExecutionError(com.netflix.hystrix.HystrixInvokable, java.lang.Exception)}.
+     * {@link com.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onExecutionError(com.netflix.hystrix.HystrixInvokable, java.lang.Exception)}.
      */
     @Test
     public final void testOnExecutionError2() throws Exception {
@@ -78,7 +79,7 @@ public class AppdHystrixCommandExecutionHookTest {
     
     /**
      * Test method for
-     * {@link net.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onExecutionStart(com.netflix.hystrix.HystrixInvokable)}.
+     * {@link com.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onExecutionStart(com.netflix.hystrix.HystrixInvokable)}.
      */
     @Test
     public final void testOnExecutionStart() throws Exception {
@@ -89,7 +90,7 @@ public class AppdHystrixCommandExecutionHookTest {
     
     /**
      * Test method for
-     * {@link net.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onExecutionStart(com.netflix.hystrix.HystrixInvokable)}.
+     * {@link com.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onExecutionStart(com.netflix.hystrix.HystrixInvokable)}.
      */
     @Test
     public final void testOnExecutionStart2() throws Exception {
@@ -100,7 +101,7 @@ public class AppdHystrixCommandExecutionHookTest {
     
     /**
      * Test method for
-     * {@link net.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onFallbackError(com.netflix.hystrix.HystrixInvokable, java.lang.Exception)}.
+     * {@link com.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onFallbackError(com.netflix.hystrix.HystrixInvokable, java.lang.Exception)}.
      */
     @Test
     public final void testOnFallbackError() throws Exception {
@@ -111,7 +112,7 @@ public class AppdHystrixCommandExecutionHookTest {
     
     /**
      * Test method for
-     * {@link net.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onFallbackError(com.netflix.hystrix.HystrixInvokable, java.lang.Exception)}.
+     * {@link com.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onFallbackError(com.netflix.hystrix.HystrixInvokable, java.lang.Exception)}.
      */
     @Test
     public final void testOnFallbackError2() throws Exception {
@@ -122,7 +123,7 @@ public class AppdHystrixCommandExecutionHookTest {
     
     /**
      * Test method for
-     * {@link net.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onFallbackStart(com.netflix.hystrix.HystrixInvokable)}.
+     * {@link com.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onFallbackStart(com.netflix.hystrix.HystrixInvokable)}.
      */
     @Test
     public final void testOnFallbackStart() throws Exception {
@@ -133,7 +134,7 @@ public class AppdHystrixCommandExecutionHookTest {
     
     /**
      * Test method for
-     * {@link net.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onFallbackStart(com.netflix.hystrix.HystrixInvokable)}.
+     * {@link com.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook#onFallbackStart(com.netflix.hystrix.HystrixInvokable)}.
      */
     @Test
     public final void testOnFallbackStart2() throws Exception {
