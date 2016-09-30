@@ -2,29 +2,14 @@ package com.kenzan.hystrix.appdynamics.hook;
 
 import static org.junit.Assert.assertTrue;
 
-import java.io.IOException;
-
-import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.runners.MockitoJUnitRunner;
 
-import com.kenzan.hystrix.appdynamics.hook.AppdHystrixCommandExecutionHook;
-import com.kenzan.hystrix.appdynamics.hook.AppdHystrixEventNotifierHook;
-import com.netflix.config.ConfigurationManager;
 import com.netflix.hystrix.strategy.HystrixPlugins;
 import com.netflix.hystrix.strategy.eventnotifier.HystrixEventNotifier;
 import com.netflix.hystrix.strategy.executionhook.HystrixCommandExecutionHook;
 
-@RunWith(MockitoJUnitRunner.class)
 public class HookTest {
-    
-    @Before
-    public void setup() throws IOException {
-        
-        ConfigurationManager.loadPropertiesFromResources("hystrix-appdynamics.properties");
-    }
-    
+
     @Test
     public void testHookSetup() {
         
