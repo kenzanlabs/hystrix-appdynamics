@@ -19,18 +19,41 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>net.kenzan.hystrix</groupId>
+	<groupId>com.kenzan.hystrix</groupId>
 	<artifactId>hystrix-appdynamics</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>hystrix-appdynamics</name>
-	<url>http://maven.apache.org</url>
+	<name>${project.groupId}:${project.artifactId}</name>
+	<url>https://github.com/kenzanlabs/hystrix-appdynamics</url>
+    <description>Provides enhanced hystrix instrumentation for App Dynamics</description>
     <inceptionYear>2016</inceptionYear>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Manfred Moser</name>
+            <email>manfred@sonatype.com</email>
+            <organization>Sonatype</organization>
+            <organizationUrl>http://www.sonatype.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/kenzanlabs/hystrix-appdynamics.git</connection>
+        <developerConnection>scm:git:ssh://github.com:kenzanlabs/hystrix-appdynamics.git</developerConnection>
+        <url>http://github.com/kenzanlabs/hystrix-appdynamics/tree/master</url>
+    </scm>
 
 	<dependencies>
 		<!-- Wrap remote commands in the Hystrix circuit breaker -->
@@ -85,6 +108,44 @@
                     <execution>
                         <goals>
                             <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
                         </goals>
                     </execution>
                 </executions>
