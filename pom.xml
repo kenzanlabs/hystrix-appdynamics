@@ -42,10 +42,16 @@
 
     <developers>
         <developer>
-            <name>Manfred Moser</name>
-            <email>manfred@sonatype.com</email>
-            <organization>Sonatype</organization>
-            <organizationUrl>http://www.sonatype.com</organizationUrl>
+            <name>Darshan Rambhia</name>
+            <email>drambhia@kenzan.com</email>
+            <organization>Kenzan</organization>
+            <organizationUrl>http://www.kenzan.com</organizationUrl>
+        </developer>
+        <developer>
+            <name>Matt Carrier</name>
+            <email>mcarrier@kenzan.com</email>
+            <organization>Kenzan</organization>
+            <organizationUrl>http://www.kenzan.com</organizationUrl>
         </developer>
     </developers>
 
