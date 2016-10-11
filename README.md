@@ -1,4 +1,4 @@
-## Hystrix-AppDynamics
+## Hystrix-AppDynamics [![Build Status](https://travis-ci.org/kenzanlabs/hystrix-appdynamics.svg?branch=master)](https://travis-ci.org/kenzanlabs/hystrix-appdynamics)
 
 
 # Overview
