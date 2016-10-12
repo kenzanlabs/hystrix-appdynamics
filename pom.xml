@@ -57,7 +57,7 @@
 
     <scm>
         <connection>scm:git:git://github.com/kenzanlabs/hystrix-appdynamics.git</connection>
-        <developerConnection>scm:git:ssh://github.com:kenzanlabs/hystrix-appdynamics.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/kenzanlabs/hystrix-appdynamics.git</developerConnection>
         <url>http://github.com/kenzanlabs/hystrix-appdynamics/tree/master</url>
     </scm>
 
