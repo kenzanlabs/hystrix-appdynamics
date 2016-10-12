@@ -4,8 +4,6 @@
 # Overview
 hystrix-appdynamics provides specific hooks for Appdynamics to instrument hystrix
 
-**Current Release: 0.0.1**
-
 # Usage
 Maven:
 
@@ -13,7 +11,7 @@ Maven:
 <dependency>    
     <groupId>com.kenzan.hystrix</groupId>
 	<artifactId>hystrix-appdynamics</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 </dependency> 
 ```
 # Dependencies
