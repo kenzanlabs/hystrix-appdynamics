@@ -20,7 +20,7 @@
 
 	<groupId>com.kenzan.hystrix</groupId>
 	<artifactId>hystrix-appdynamics</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>${project.groupId}:${project.artifactId}</name>
@@ -58,7 +58,7 @@
         <connection>scm:git:git://github.com/kenzanlabs/hystrix-appdynamics.git</connection>
         <developerConnection>scm:git:https://github.com/kenzanlabs/hystrix-appdynamics.git</developerConnection>
         <url>http://github.com/kenzanlabs/hystrix-appdynamics/tree/master</url>
-      <tag>0.0.2</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <distributionManagement>
