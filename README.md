@@ -11,7 +11,7 @@ Maven:
 
 ```
 <dependency>    
-    <groupId>com.kenzan.hystrix </groupId>
+    <groupId>com.kenzan.hystrix</groupId>
 	<artifactId>hystrix-appdynamics</artifactId>
 	<version>0.0.1</version>
 </dependency> 
